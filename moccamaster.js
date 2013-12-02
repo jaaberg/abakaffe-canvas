@@ -1,6 +1,6 @@
 
 $.getJSON('http://kaffe.abakus.no/api/status', function(obj) {
-      
+      console.log(obj);
       $(".minutes").append(obj.time_since.minutes);
 
       if (obj.status) {
