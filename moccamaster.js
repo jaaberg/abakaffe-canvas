@@ -1,7 +1,5 @@
 pico.load("getjson");
 
-
-
 pico.main = function() {
   getjson.get_obj().onreadystatechange = function (event) {
     var xhr = event.target;

@@ -1,5 +1,12 @@
 canvas { 
-	border: 0px solid black; 
+	border: 0px solid black;
+	display:inline;
+	margin-top: 5%;
+}
+
+.col-md-12 {
+	width: 100%;
+	text-align: center;
 }
 
 body {
