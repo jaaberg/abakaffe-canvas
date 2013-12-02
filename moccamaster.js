@@ -20,12 +20,14 @@ pico.main = function() {
       if (obj.time_since.hours > 0) {
         $(".hours").append(obj.time_since.hours + " timer og ");
       }
-      if ( obj.time_since.minutes < 3 && obj.status === true) {
+      if ( obj.time_since.minutes < 4 && obj.status === true) {
         draw(true, 1);
-      } else if (obj.time_since.minutes < 6 && obj.status === true) {
+      } else if (obj.time_since.minutes < 8 && obj.status === true) {
         draw(true, 2);
-      } else if (obj.time_since.minutes < 10 && obj.status === true) {
+      } else if (obj.time_since.minutes < 12 && obj.status === true) {
         draw(true, 3);
+      } else if (obj.status === true) {
+        draw(true, 4);
       } else {
         draw(false, 0);
       }
@@ -35,7 +37,7 @@ pico.main = function() {
 
 function draw(status, stage){
 	var scale = 1;
-  var canvas = document.getElementById('tutorial');
+  var canvas = document.getElementById('moccamaster');
 
   if (canvas.getContext){
     var ctx = canvas.getContext('2d');

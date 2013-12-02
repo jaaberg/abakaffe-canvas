@@ -7,3 +7,5 @@ data = json.load(response)
 
 def get_obj():
 	return data.get('coffee')
+
+print data.get('coffee')
