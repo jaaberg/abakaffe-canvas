@@ -1,15 +1,13 @@
 canvas { 
-	border: 0px solid black;
 	display:inline;
-	margin-top: 5%;
 }
 
 .col-md-12 {
 	width: 100%;
 	text-align: center;
+	margin-top: 5%;
 }
 
 body {
 	background-color: #dbcbbb;
-	font-family: 'Montserrat', sans-serif;
 }
