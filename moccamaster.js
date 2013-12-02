@@ -1,11 +1,5 @@
-pico.load("getjson");
 
-pico.main = function() {
-  getjson.get_obj().onreadystatechange = function (event) {
-    var xhr = event.target;
-
-    if (xhr.readyState === 4) {
-      var obj = JSON.parse(xhr.responseText);
+$.getJSON('http://kaffe.abakus.no/api/status', function(obj) {
       
       $(".minutes").append(obj.time_since.minutes);
 
@@ -29,9 +23,8 @@ pico.main = function() {
       } else {
         draw(false, 0);
       }
-    }
-  };
-};
+});
+
 
 function draw(status, stage){
 	var scale = 1;
