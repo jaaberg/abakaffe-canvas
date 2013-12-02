@@ -25,32 +25,32 @@ function draw(){
       roundRect (ctx, 226, 45, 154, 80, 32, 0, true); // trakt_hoved
 
       ctx.fillStyle = "rgb(141,131,122)"; //tan
-  		roundRect (ctx, 52, 150, 121, 201, 0, 10, true); // Stand
-  		roundRect (ctx, 30, 368, 377, 53, 0, 0, true);//bottom_inner
-  		roundRect (ctx, 44, 377	, 41, 17, 0, 20, true); //Button_left
-  		roundRect (ctx, 160, 15, 164, 14, 0, 5, true); // filler
+      roundRect (ctx, 52, 150, 121, 201, 0, 10, true); // Stand
+      roundRect (ctx, 30, 368, 377, 53, 0, 0, true);//bottom_inner
+      roundRect (ctx, 44, 377	, 41, 17, 0, 20, true); //Button_left
+      roundRect (ctx, 160, 15, 164, 14, 0, 5, true); // filler
 
       ctx.fillStyle = "rgb(206,206,206)"; //gray
       roundRect (ctx, 44, 377 , 345, 33, 0, 20, true); //Inner_bottom
   		
-  		ctx.fillStyle = "rgb(0,0,0)"; //black
-  		roundRect (ctx, 66, 385, 41, 17, 0, 5, true); //Button_left
-  		roundRect (ctx, 115, 385, 41, 17, 0, 5, true); //Button_right
+      ctx.fillStyle = "rgb(0,0,0)"; //black
+      roundRect (ctx, 66, 385, 41, 17, 0, 5, true); //Button_left
+      roundRect (ctx, 115, 385, 41, 17, 0, 5, true); //Button_right
 
-  		ctx.fillStyle = "rgb(75,75,75)"; //buttongray
-  		roundRect (ctx, 78, 387, 26, 12, 0, 5, true); //Button_inner_left
-  		roundRect (ctx, 127, 387, 26, 12, 0, 5, true); // Button_inner_right
+      ctx.fillStyle = "rgb(75,75,75)"; //buttongray
+      roundRect (ctx, 78, 387, 26, 12, 0, 5, true); //Button_inner_left
+      roundRect (ctx, 127, 387, 26, 12, 0, 5, true); // Button_inner_right
 
-  		ctx.fillStyle = "rgb(241, 241, 241)"; //white 		
-  		roundRect (ctx,210, 233, 169, 118, 0, 25, true); //bottle
-  		roundRect (ctx,210, 186, 165, 33, 0, 20, true); //bottle_top
+      ctx.fillStyle = "rgb(241, 241, 241)"; //white 		
+      roundRect (ctx,210, 233, 169, 118, 0, 25, true); //bottle
+      roundRect (ctx,210, 186, 165, 33, 0, 20, true); //bottle_top
 
-  		ctx.fillStyle = "rgb(217, 220, 225)"; //grayblue
-  		roundRect (ctx,218, 241, 153, 102, 0, 25, true); //bottle_inside
-  		roundRect (ctx,220, 194, 143, 18, 0, 10, true); //bottle_top_inside
+      ctx.fillStyle = "rgb(217, 220, 225)"; //grayblue
+      roundRect (ctx,218, 241, 153, 102, 0, 25, true); //bottle_inside
+      roundRect (ctx,220, 194, 143, 18, 0, 10, true); //bottle_top_inside
 
-  		ctx.fillStyle = "rgb(219, 202, 187)"; //tan light
-  		roundRect (ctx, 387, 240, 33, 86, 0, 5, true); // Handle_inner
+      ctx.fillStyle = "rgb(219, 202, 187)"; //tan light
+      roundRect (ctx, 387, 240, 33, 86, 0, 5, true); // Handle_inner
 
       ctx.fillStyle = "rgb(241, 241, 241)"; //white
       roundRect (ctx, 30, 15, 163, 115, 20, 10, true); //roundRect_left
@@ -59,9 +59,9 @@ function draw(){
       roundRect (ctx, 41, 23, 140, 100, 15, 10, true); //roundRect_left_inner
 
       ctx.fillStyle = "rgb(35,35,35)"; //dark dark grey
-  		roundRect (ctx, 44, 25, 134, 14, 0, 5, true); // lokk_left_bottom
-  		roundRect (ctx, 49, 5, 125, 20, -5, 4, true); //lokk_left_top
-  		roundRect (ctx, 225, 30, 156, 20, 0, 7, true); // trakt_topp
+      roundRect (ctx, 44, 25, 134, 14, 0, 5, true); // lokk_left_bottom
+      roundRect (ctx, 49, 5, 125, 20, -5, 4, true); //lokk_left_top
+      roundRect (ctx, 225, 30, 156, 20, 0, 7, true); // trakt_topp
 
       if ( minutes < 7 && status === true ){
         ctx.fillStyle = "rgb(22,135,181)"; //blue
