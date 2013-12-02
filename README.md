@@ -3,6 +3,8 @@ abacoffee
 
 A canvas illustrating the status of the moccamaster at the Abaoffice. 
 
+$ python -m pico.server
+
 Off: 
 
 ![alt tag](https://github.com/jorgeaab/abacoffee/blob/master/screens/S00.png?raw=true)
