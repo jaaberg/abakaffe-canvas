@@ -1,24 +1,23 @@
 
 $.getJSON('http://kaffe.abakus.no/api/status', function(obj) {
-      console.log(obj);
-      $(".minutes").append(obj.time_since.minutes);
+      $(".minutes").append(obj.coffee.time_since.minutes);
 
-      if (obj.status) {
+      if (obj.coffee.status) {
         $(".turnedOn").append("på");
       } else {
         $(".turnedOn").append("av");
       }
       
-      if (obj.time_since.hours > 0) {
-        $(".hours").append(obj.time_since.hours + " timer og ");
+      if (obj.coffee.time_since.hours > 0) {
+        $(".hours").append(obj.coffee.time_since.hours + " timer og ");
       }
-      if ( obj.time_since.minutes < 4 && obj.status === true) {
+      if ( obj.coffee.time_since.minutes < 4 && obj.coffee.status === true) {
         draw(true, 1);
-      } else if (obj.time_since.minutes < 8 && obj.status === true) {
+      } else if (obj.coffee.time_since.minutes < 8 && obj.coffee.status === true) {
         draw(true, 2);
-      } else if (obj.time_since.minutes < 12 && obj.status === true) {
+      } else if (obj.coffee.time_since.minutes < 12 && obj.coffee.status === true) {
         draw(true, 3);
-      } else if (obj.status === true) {
+      } else if (obj.coffee.status === true) {
         draw(true, 4);
       } else {
         draw(false, 0);
