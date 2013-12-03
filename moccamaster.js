@@ -7,6 +7,7 @@ function draw(){
 
   if (canvas.getContext){
     $.getJSON('http://kaffe.abakus.no/api/status', function(obj) {
+      
       var status = obj.coffee.status; 
       var minutes = obj.coffee.time_since.minutes;
       var ctx = canvas.getContext('2d');
@@ -70,9 +71,14 @@ function draw(){
         roundRect (ctx,218, 316+(-50/6)*(minutes+1), 153, 27+(50/6)*(minutes+1), 0, 25, true); //coffee
         roundRect (ctx,290, 241, 20, 101, 0, 0, true); //coffee 
         roundRect (ctx,290, 201, 20, 10, 0, 0, true); //coffee
+      } else if ( minutes <= 19 && minutes >= 7 && status === true) {
+        ctx.fillStyle = "rgb(45,27,19)"; //brown
+        var temp = minutes-6;
+        roundRect (ctx,218, 258+(52*temp)/14, 153, 85-(52*temp)/14, 0, 25, true); //coffee
+        //roundRect (ctx,218, 306(-52), 153, 37(+52), 0, 25, true); //coffee
       } else if ( status === true ) {
         ctx.fillStyle = "rgb(45,27,19)"; //brown
-        roundRect (ctx,218, 316+(-58), 153, 27+(58), 0, 25, true); //coffee
+        roundRect (ctx,218, 306, 153, 37, 0, 25, true); //coffee
       }
 
       ctx.fillStyle = "rgb(241, 241, 241)"; //white
