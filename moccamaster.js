@@ -36,7 +36,7 @@ function updateCanvasSize(ctx, status, time_since_minutes) {
     canvas.style.width ='100%';
     canvas.style.height='100%';
     canvas.width  = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
+    canvas.height = canvas.offsetWidth;
 
     draw(ctx, status, time_since_minutes);
 }
