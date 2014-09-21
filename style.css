@@ -1,13 +1,8 @@
-canvas { 
-	display:inline;
-}
-
-.col-md-12 {
-	width: 100%;
-	text-align: center;
-	margin-top: 5%;
-}
-
 body {
-	background-color: #dbcbbb;
+	background-color: #dbcbbb !important;
+}
+@media (max-width: 480px) {
+    #gh-ribbon{
+        display: none;
+    }
 }
